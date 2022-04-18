@@ -1,0 +1,19 @@
+<section class="my-5 py-3">
+    <div class="container">
+        <div class="row">
+            <h2 class="px-5 text-uppercase text-center mb-3"><b>Cadastrar</b></h2>
+            <form class="col-md-9 m-auto">
+                <label class="alert-link">Id</label><input class="form-control" type="text" name="id" [(ngModel)] = "vaga.id"><br>
+                <label class="alert-link">Nome</label><input class="form-control" type="text" name="nome" [(ngModel)] = "vaga.nome"><br>
+                <label class="alert-link">Foto</label><input class="form-control" type="text" name="foto" [(ngModel)] = "vaga.foto"><br>
+                <label class="alert-link">Descrição</label><input class="form-control" type="text" name="descricao" [(ngModel)] = "vaga.descricao"><br>
+                <label class="alert-link">Salário</label><input class="form-control" type="text" name="salario" [(ngModel)] = "vaga.salario"><br>
+                <div class="d-flex justify-content-between">
+                    <button class="btn btn-primary  col-md-4 me-3 shadow-sm" type="button" (click)="cadastrar()"><b>Cadastrar Vaga</b></button>
+                    <button class="btn btn-warning  col-md-4 mx-3 shadow-sm" type="button" (click)="atualizar(vaga.id)"><b>Atualizar Vaga</b></button>
+                    <button class="btn btn-danger  col-md-4 ms-3 shadow-sm" type="button" (click)="excluir(vaga.id)"><b>Excluir Vaga</b></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
